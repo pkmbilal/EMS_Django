@@ -6,7 +6,7 @@ class Employee(models.Model):
     contact_number = models.IntegerField()
     emergency_contact_number = models.IntegerField()
     address = models.TextField(max_length=200)
-    postion = models.CharField(max_length=50)
+    position = models.CharField(max_length=50)
     DOB = models.DateField()
     marital_status =models.BooleanField(default=False)
     blood_group = models.CharField(max_length=3)
