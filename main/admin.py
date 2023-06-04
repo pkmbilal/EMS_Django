@@ -7,5 +7,6 @@ class LeaveAdmin(admin.ModelAdmin):
 
 class EmployeeAdmin(admin.ModelAdmin):
     list_display = ['id', 'employee_name', 'contact_number', 'email', 'position', 'reporting_to', 'work_location']
+
 admin.site.register(Employee, EmployeeAdmin)
 admin.site.register(Leave, LeaveAdmin)
